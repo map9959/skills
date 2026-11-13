@@ -13,7 +13,4 @@ python3 opinionated-frontend/scripts/setup.py ./my-app/frontend
 python3 opinionated-backend/scripts/setup.py ./service --scale scalable --cache --mcp
 ```
 
-These initialize package management and install dependencies in a new or empty
-directory. No application templates or scaffolds—an agent implements the app next.
-Backend setup also creates gitignored `.env` and tracked `.env.example` files.
-Commit generated lockfiles; subsequent installs use `uv sync --locked` or `npm ci`.
+These initialize package management and install dependencies in a new or empty directory. An agent (or you) should be able to pick it up afterward. Backend setup also creates gitignored `.env` and tracked `.env.example` files so you can keep track of which environment variables are being used. Commit generated lockfiles; subsequent installs use `uv sync --locked` or `npm ci`.
